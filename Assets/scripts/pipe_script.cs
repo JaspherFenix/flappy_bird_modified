@@ -22,7 +22,7 @@ public class pipe_script : MonoBehaviour
         centerY = (highest + lowest) / 2f;
         amplitude = (highest - lowest) / 2f;
 
-        isMoving = Random.Range(0, 4) == 0;
+        isMoving = Random.Range(0, 3) == 0;
     }
 
     // Update is called once per frame
