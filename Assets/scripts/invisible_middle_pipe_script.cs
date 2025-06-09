@@ -19,6 +19,9 @@ public class invisible_middle_pipe_script : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        logic.add_score();
+        if (collision.gameObject.layer == 3)
+        {
+            logic.add_score(1);
+        }
     }
 }
